@@ -111,7 +111,7 @@ pull(){
   echo "----------git：find status---------"
   git status
   echo "----------git：pull new coads---------"
-  git pull origin develop
+  git pull origin main
   if [ $? -ne 0 ]; then
     exit
   fi
