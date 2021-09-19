@@ -12,6 +12,7 @@ import com.mao.service.BlogService;
 import com.mao.util.ShiroUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.models.HttpMethod;
 import org.apache.shiro.authz.annotation.RequiresAuthentication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
@@ -49,6 +50,7 @@ public class BlogController {
      * */
     @ApiOperation("分页接口")
     @GetMapping("/blogs")
+//    @RequestMapping(method = RequestMethod.GET)
     public Result list(@RequestParam(defaultValue = "1") Integer currentPage){
 //        if (currentPage==null || currentPage<1) currentPage=1;
         Page page = new Page(currentPage,5);
@@ -102,6 +104,7 @@ public class BlogController {
     @ApiOperation(value = "根据博客id删除博客", notes = "author：HuChao")
 //    @Transactional(rollbackFor = Exception.class)
     @DeleteMapping
+//  @RequestMapping(method = HttpMethod.DELETE)
     public Result deleteBlog(Long id) {
         int count = blogService.deleteBlog(id);
 //        if (count > 0) {

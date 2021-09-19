@@ -28,6 +28,7 @@ import javax.validation.constraints.NotBlank;
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @TableName("m_blog")
+// 该注解主要是现实实体类型和数据库中的表实现映射。
 @ApiModel("博客实体")
 public class Blog implements Serializable {
 
@@ -54,13 +55,9 @@ public class Blog implements Serializable {
 
     @TableLogic
     private Integer status;
-
 //    //    // 字段添加填充内容
 //    @TableField(fill = FieldFill.INSERT)
 //    private Date createTime;
     @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
-
-
-
 }

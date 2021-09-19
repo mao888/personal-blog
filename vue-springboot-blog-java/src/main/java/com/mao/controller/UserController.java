@@ -6,6 +6,7 @@ import com.mao.entity.User;
 import com.mao.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.models.HttpMethod;
 import org.apache.shiro.authz.annotation.RequiresAuthentication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
@@ -54,6 +55,7 @@ public class UserController {
      * */
     @ApiOperation("测试实体校验接口")
     @PostMapping("/save")
+//    @RequestMapping(method = HttpMethod.POST )
     public Object testUser(@Validated @RequestBody User user) {
         return user.toString();
     }
