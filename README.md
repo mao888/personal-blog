@@ -1,4 +1,6 @@
 > **项目：Vue-SpringBoot-PersonalBlog**
+> 
+>**个人博客网址**：http://47.93.20.204/blogs
 >
 > **CSDN：毛_三月**
 
@@ -82,6 +84,8 @@
 
 
 ### 项目文档：
+
+**博客网址：** http://47.93.20.204/blogs
 
 **项目资源链接**：【Vue+SpringBoot】超详细！一周开发一个SpringBoot + Vue+MybatisPlus+Shiro+JWT+Redis前后端分离个人博客项目！！！【项目完结】
 https://blog.csdn.net/qq_45696377/article/details/120049495 
