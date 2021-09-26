@@ -70,7 +70,7 @@
 
 
 #### 博客主页
-![博客主页](https://user-images.githubusercontent.com/59285170/131690143-5ce54633-4a37-4c0d-9083-f64a50890f28.png)
+![image](https://user-images.githubusercontent.com/59285170/134798481-913cc9f0-7d04-4b1e-a917-df45d8e420c7.png)
 
 
 #### 博客详情页
@@ -88,6 +88,9 @@
 **Github**：https://mao888.github.io/Personal-blog/
 
 **项目视频讲解**：https://www.bilibili.com/video/BV1VU4y1P7AJ?spm_id_from=333.999.0.0
+
+**项目部署**：【项目部署】Vue+SpringBoot前后分离个人博客项目实战部署保姆教程 Linux+docker安装部署启动一条龙教程
+              https://blog.csdn.net/qq_45696377/article/details/120478368
 
 关注我的Github，后续陆续还会有开源项目
 
