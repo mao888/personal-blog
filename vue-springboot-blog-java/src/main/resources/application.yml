@@ -2,9 +2,10 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://47.93.20.204:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
     username: root
-    password: 10428376
+#    password: 10428376
+    password: Vv0IBQ5qST
 #    除了配置数据库的信息，还配置了myabtis plus的mapper的xml文件的扫描路径
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**Mapper.xml
@@ -25,7 +26,7 @@ mybatis-plus:
 #  mybatis-plus.global-config.db-config.logic-not-delete-value=0
 
 server:
-  port: 8081
+  port: 8085
 
 shiro-redis:
   enabled: true

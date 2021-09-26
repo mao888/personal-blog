@@ -42,8 +42,8 @@ export default {
     };
     return {
       ruleForm: {
-        password: '10428376',
-        username: '胡超'
+        password: '',
+        username: ''
       },
       rules: {
         password: [
@@ -64,7 +64,7 @@ export default {
         if (valid) {
           const _this = this  //定义一个全局整个vue项目的this
           // 提交逻辑   .then((res)=>发起请求后的得到的一个结果
-          this.$axios.post('http://localhost:8081/login', this.ruleForm).then((res)=>{
+          this.$axios.post('http://47.93.20.204:8085/login', this.ruleForm).then((res)=>{
             // this 代表这个请求的this; _this代表全局请求的this
             const token = res.headers['authorization']
             const useInfo=res.data.data
@@ -108,7 +108,10 @@ export default {
   padding:0;
 }
 .mlogo{
-  margin-left: 750px;
+  /* margin-left: 650px; */
+  margin: 0 auto;
+  padding: 10px;
+  display: block;
   text-align:center;
   width:960px;
   height:280px;

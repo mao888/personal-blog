@@ -1,6 +1,5 @@
 //  一个页面之间会有多个组件 子组件更新数据 通过数据状态管理  通知每一组件
 // 数据状态管理界面  所有的子组件更新交流数据都在此
-
 import Vue from 'vue'
 import Vuex from 'vuex'
 
@@ -16,9 +15,9 @@ export default new Vuex.Store({
   state: {
     token:'',
     //反序列化  将json字符串转换成对象
-    userInfo:JSON.parse(sessionStorage.getItem("userInfo"))
-    }
-  ,
+    userInfo:JSON.parse(sessionStorage.getItem("userInfo")),
+    isShow:true//侧边栏的显示或者隐藏
+  },
   //给token和userInfo赋值
   mutations: {
     //set方法
@@ -37,17 +36,29 @@ export default new Vuex.Store({
       state.userInfo=''
       localStorage.setItem("token",'')
       sessionStorage.setItem("userInfo",'')
-}
     },
-    // 取值
+    // 改变isShow的值
+    changeIsShow(state,msg){
+      state.isShow=!msg;
+    }
+  },
+  // 取值
   getters:{
     //get方法
     getUser:state => {
       return state.userInfo
+    },
+    //获取isShow
+    getIsShow:state => {
+      return state.isShow
     }
   },
   actions: {
+    // getIsShow(context,isShow){
+    //   context.commit('changeIsShow',isShow)
+    // }
   },
   modules: {
+
   }
 })

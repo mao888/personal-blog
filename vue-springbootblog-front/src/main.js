@@ -19,7 +19,7 @@ Vue.use(mavonEditor)
 
 Vue.config.productionTip = false
 Vue.prototype.$axios = axios    //全局使用
-
+Vue.prototype.$store = store    //全局使用
 new Vue({
   router,
   store,

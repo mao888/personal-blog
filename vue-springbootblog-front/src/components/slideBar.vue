@@ -41,29 +41,62 @@
           <i class="el-icon-s-help"></i>
           <a slot="title" href="https://www.toutiao.com/c/user/token/MS4wLjABAAAAQ_JL56btV-vodA1tVR6yPg-GbxD23cRRlFvK_3KEdt0/?source=feed">今日头条</a>
         </el-menu-item>
-        <el-menu-item index="10">
-          <i class="el-icon-lollipop"></i>
-          <a slot="title" href=""></a>
-        </el-menu-item>
     </el-menu>
   <!-- </div> -->
 </template>
 
 <script>
 export default {
-  name:"slideBar"
+  name:"slideBar",
 }
 </script>
 
 <style scoped>
 a{
   text-decoration:none;
-  color:#909399;
+  color: rgb(0 0 0 / 46%);
+}
+/* /deep/ .el-menu{ */
+  /* display: flex;
+  flex-direction: column;
+  justify-content:space-between; */
+/* } */
+
+::v-deep .el-menu{
+  height:100%;
+  display: block;
+}
+::v-deep .el-menu-item{
+  height:103px;
+  line-height: 103px;
+  /* height:30%; */
+  font-size: 20px;
+  text-align:left;
+  /* flex: 1; */
+    font-size: 24px;
+    color: #303133;
+    padding: 0px 56px;
+    cursor: pointer;
+    transition: border-color .3s,background-color .3s,color .3s;
+    box-sizing: border-box;
 }
 
-/deep/ .el-menu-item{
-  height:100px;
-  font-size: 20px;
-}
+/* /deep/ .el-menu-item{
+  height:55px;
+  /* flex-grow:1; */
+  /* font-size: 23px; */
+  /* text-align:left; */
+  /* justify-content:space-between; */
+/* } */ 
+
+/* .el-menu-item, .el-submenu__title {
+    height: 60px;
+    line-height: 56px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    white-space: nowrap;
+    list-style: none;
+} */
+
 
 </style>

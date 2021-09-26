@@ -38,6 +38,13 @@ public class BlogController {
     @Autowired
     BlogService blogService;
 
+
+    @GetMapping("/")
+    public String start(){
+
+        return "SUCCESS";
+    }
+
     /**
      * 分页接口
      * Integer currentPage 分页参数

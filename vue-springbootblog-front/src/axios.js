@@ -2,7 +2,7 @@ import axios from 'axios'
 import Element from "element-ui";
 import store from "./store";
 import router from "./router";
-axios.defaults.baseURL='http://localhost:8081'
+axios.defaults.baseURL='http://47.93.20.204:8085'
 /**
  * 点击登录按钮发起登录请求，成功时候返回了数据，
  * 如果是密码错误，也应该弹窗消息提示。
@@ -11,13 +11,13 @@ axios.defaults.baseURL='http://localhost:8081'
  * interceptors:拦截器  request:请求   response：响应   
  */
 axios.interceptors.request.use(config => {
-    console.log("前置拦截")
+    // console.log("前置拦截")
     // 可以统一设置请求头
     return config
 })
 axios.interceptors.response.use(response => {
         const res = response.data;
-        console.log("后置拦截")
+        // console.log("后置拦截")
         // 当结果的code是否为200的情况
         if (res.code === 200) {
             return response

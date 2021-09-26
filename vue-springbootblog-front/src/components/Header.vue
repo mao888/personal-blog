@@ -39,6 +39,14 @@ export default {
     }
   },
   methods:{
+    // hide(){
+    //   this.$router.push({
+    //     path: '/particulars',
+    //     query: {
+    //       id: id
+    //     }
+    //   })
+    // },
     logout() {
       // 后端的jwt信息是无状态的 存到redis进行一个状态的处理  直接将localstorage删除无需请求后端  如果是有状态的需要请求后端
       const _this =this

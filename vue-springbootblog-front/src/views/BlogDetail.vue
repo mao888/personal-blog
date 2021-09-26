@@ -1,49 +1,41 @@
 <!--（博客详情页）-->
 <template>
   <div class="detail">
-    <div class="left">
-      <slideBar />
-    </div>
-    <div class="center">
-      <Header></Header>
-      <div class="mblog">
-        <h2>{{ blog.title }}</h2>
-        <el-link icon="el-icon-edit" v-if="ownBlog">
-          <router-link 
-          :to="{ 
-            name: 'BlogEdit', 
-            params: { blogId: blog.id } 
-          }">
-            编辑
-          </router-link>
-        </el-link>
-        <el-link icon="el-icon-edit" v-if="ownBlog">
-          <el-button type="text" @click="deleteForm()">删除</el-button>
-          </el-link>
-        <el-divider></el-divider> 
-        <div class="content markdown-body" v-html="blog.content"></div>
+   <div class="front">
+      <div class="menu">
+        <i class="el-icon-s-home" @click="hide()"></i>
+        <span>胡超の万事屋</span>
       </div>
-      <!-- <el-autocomplete
-        popper-class="my-autocomplete"
-        v-model="state"
-        :fetch-suggestions="querySearch"
-        placeholder="请输入内容"
-        @select="handleSelect"
-      >
-        <i
-          class="el-icon-edit el-input__icon"
-          slot="suffix"
-          @click="handleIconClick"
-        >
-        </i>
-        <template slot-scope="{ item }">
-          <div class="name">{{ item.value }}</div>
-          <span class="addr">{{ item.address }}</span>
-        </template>
-      </el-autocomplete> -->
     </div>
-    <div class="right">
-      <calendor/>
+    <div class="down">
+      <div class="left" v-show="isShow">
+        <slideBar/>
+      </div>
+      <div class="center">
+        <div class="blog">
+          <Header></Header>
+        <div class="mblog">
+          <h2>{{ blog.title }}</h2>
+          <el-link icon="el-icon-edit" v-if="ownBlog">
+            <router-link 
+            :to="{ 
+              name: 'BlogEdit', 
+              params: { blogId: blog.id } 
+            }">
+              编辑
+            </router-link>
+          </el-link>
+          <el-link icon="el-icon-edit" v-if="ownBlog">
+            <el-button type="text" @click="deleteForm()">删除</el-button>
+            </el-link>
+          <el-divider></el-divider> 
+          <div class="content markdown-body" v-html="blog.content"></div>
+        </div>
+        </div>
+      </div>
+      <div class="right">
+        <calendor/>
+      </div>
     </div>
   </div>
 </template>
@@ -64,16 +56,24 @@ export default {
         description: "",
         content: "",
       },
-      ownBlog: false,
+      ownBlog: false
     };
   },
+  computed:{
+    isShow(){
+      return this.$store.getters.getIsShow
+    }
+  },
   methods: {
+    hide(){
+      this.$store.commit('changeIsShow',this.isShow)
+    },
     getBlog() {
       const blogId = this.$route.params.blogId;
       const _this = this;
       this.$axios.get("/blog/" + blogId).then((res) => {
-        console.log(res);
-        console.log(res.data.data);
+        // console.log(res);
+        // console.log(res.data.data);
         _this.blog = res.data.data;
         var MarkdownIt = require("markdown-it"), //返回的博客详情content通过markdown-it工具进行渲染。
           md = new MarkdownIt();
@@ -122,39 +122,65 @@ export default {
 
 <style scoped>
 .detail{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   width: 100%;
   height: 100%;
-  /* text-align: left; */
+  display: flex;
+  flex-direction: column;
 }
-.left {
-  width:250px;
-  height: 1500px;
+.front{
+  width: 100%;
+  background-color:#c6c3c3;
+  z-index: 100;
   position: fixed;
-  top:0;
+  height:40px;
+  line-height:40px;
+}
+.front .menu{
+  width:180px;
+}
+.front i{
+  margin-left:20px;
+  color:#fcf2f2;
+}
+.front span{
+  font-size: 18px;
+  font-weight: 600;
+  color:#fcf2f2;
+  margin-left:5px;
+}
+.down{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top:40px;
+}
+.down .left {
+  top:40px;
   left:0;
+  position: fixed; 
+  height:100%;
+  width:13%;
+  flex-grow:1;
   background:#fdf6ec;
-  text-align: center;
+  z-index:10;
 }
-.center {
-  width:80%;
-  margin-left:250px;
-  background-color: bisque;
-  text-align: left;
+.down .center {
+  max-width:80%;
+  flex-grow:2;
+  background-color: #fcf2f2; 
+  padding:20px;
 }
-.center .mblog {
+.down .center .mblog {
   background-color: beige;
-  width:80%;
-  margin-left:8%;
+  /* width:80%;
+  margin-left:8%; */
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   min-height: 700px;
   padding: 20px 15px;
 }
-.right{
+.down .right{
   width:20%;
-  text-align: center;
   background: #fdf6ec;
 }
 </style>
