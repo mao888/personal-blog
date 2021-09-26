@@ -83,11 +83,13 @@
 
 ### 项目文档：
 
-**项目资源链接**：https://blog.csdn.net/qq_45696377/article/details/120049495 
+**项目资源链接**：【Vue+SpringBoot】超详细！一周开发一个SpringBoot + Vue+MybatisPlus+Shiro+JWT+Redis前后端分离个人博客项目！！！【项目完结】
+https://blog.csdn.net/qq_45696377/article/details/120049495 
 
 **Github**：https://mao888.github.io/Personal-blog/
 
-**项目视频讲解**：https://www.bilibili.com/video/BV1VU4y1P7AJ?spm_id_from=333.999.0.0
+**项目视频讲解**：【一周速成】Vue+SpringBoot前后端分离个人博客搭建！！！【简单易学】
+https://www.bilibili.com/video/BV1VU4y1P7AJ?spm_id_from=333.999.0.0
 
 **项目部署**：【项目部署】Vue+SpringBoot前后分离个人博客项目实战部署保姆教程 Linux+docker安装部署启动一条龙教程
               https://blog.csdn.net/qq_45696377/article/details/120478368
