@@ -4,8 +4,19 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://47.93.20.204:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
     username: root
-#    password: 10428376
-    password: Vv0IBQ5qST
+    password: 10428376
+    #password: Vv0IBQ5qST
+
+  mail:
+    username: 2557523039@qq.com
+    password: odlnoqjxdbmbdjgb
+    host: smip.qq.com
+    port: 587
+    properties.mail.smtp.auth: true
+    properties.mail.smtp.starttls.enable: true
+    properties.mail.smtp.starttls.required: true
+    default-encoding: UTF-8
+
 #    除了配置数据库的信息，还配置了myabtis plus的mapper的xml文件的扫描路径
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**Mapper.xml

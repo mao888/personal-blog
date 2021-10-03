@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Login from '../views/Login.vue'
-import Blogs from '../views/Blogs.vue'
+// import Blogs from '../views/Blogs.vue'
 import BlogEdit from '../views/BlogEdit.vue'
 import BlogDetail from '../views/BlogDetail.vue'
 
@@ -50,7 +50,7 @@ const routes = [
       requireAuth: true   //添加路由权限
     },
     component: BlogEdit
-  }
+  },
 ]
 
 const router = new VueRouter({
