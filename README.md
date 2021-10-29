@@ -82,10 +82,12 @@
 #### 发表博客
 ![发表博客](https://user-images.githubusercontent.com/59285170/131690202-4421b097-8c85-4fd3-a864-4e3c4f369486.png)
 
+#### 留言界面
+![image](https://user-images.githubusercontent.com/59285170/139428906-87540672-8323-4a24-8d75-14eb67c85c5a.png)
 
 ### 项目文档：
 
-**博客网址：** http://47.93.20.204/blogs
+**博客网址：** http://www.huchao.vip/blogs
 
 **项目资源链接**：【Vue+SpringBoot】超详细！一周开发一个SpringBoot + Vue+MybatisPlus+Shiro+JWT+Redis前后端分离个人博客项目！！！【项目完结】
 https://blog.csdn.net/qq_45696377/article/details/120049495 
@@ -95,8 +97,12 @@ https://blog.csdn.net/qq_45696377/article/details/120049495
 **项目视频讲解**：【一周速成】Vue+SpringBoot前后端分离个人博客搭建！！！【简单易学】
 https://www.bilibili.com/video/BV1VU4y1P7AJ?spm_id_from=333.999.0.0
 
-**项目部署**：【项目部署】Vue+SpringBoot前后分离个人博客项目实战部署保姆教程 Linux+docker安装部署启动一条龙教程
-              https://blog.csdn.net/qq_45696377/article/details/120478368
+**项目部署**：
+1、**Docker-compose+nginx部署SpringBoot+Vue前后端分离项目**
+https://blog.csdn.net/qq_45696377/article/details/121003309
+
+2、【项目部署】Vue+SpringBoot前后分离个人博客项目实战部署保姆教程 Linux+docker安装部署启动一条龙教程
+https://blog.csdn.net/qq_45696377/article/details/120478368
 
 关注我的Github，后续陆续还会有开源项目
 
