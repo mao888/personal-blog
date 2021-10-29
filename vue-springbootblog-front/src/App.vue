@@ -24,5 +24,6 @@ export default {
     padding:0;
     margin:0 auto;
     background:url(./assets/宇宙.png) no-repeat;
+    background-size:100%,100%;
   }
 </style>

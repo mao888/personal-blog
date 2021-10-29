@@ -1,9 +1,9 @@
 <template>
   <div class="m-content">
-    <h1>欢迎来到@HuChao的博客</h1>
+    <h1 class="head-title">欢迎来到@HuChao的博客</h1>
     <div class="block">
       <el-avatar :size="50" :src="user.avatar"></el-avatar>
-      <div>{{user.username}}</div>
+      <div class="username">{{user.username}}</div>
       <div class="maction">
         <span>
           <el-link type="info" href="/blogs">主页</el-link>
@@ -73,6 +73,9 @@ export default {
 </script>
 
 <style scoped>
+.head-title,.username{
+  color:#fff;
+}
 .m-content{
   max-width: 960px;
   margin: 0 auto;

@@ -1,12 +1,5 @@
 # DataSource Config
 spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://47.93.20.204:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
-    username: root
-    password: 10428376
-    #password: Vv0IBQ5qST
-
   mail:
     username: 2557523039@qq.com
     password: odlnoqjxdbmbdjgb
@@ -38,11 +31,6 @@ mybatis-plus:
 
 server:
   port: 8085
-
-shiro-redis:
-  enabled: true
-  redis-manager:
-    host: 127.0.0.1:6379
 
 mao:
   jwt:

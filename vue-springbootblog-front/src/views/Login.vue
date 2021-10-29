@@ -7,7 +7,7 @@
       <!-- width="1500" -->
       <img class="mlogo" src="../assets/mOMo3.png" alt="" >
     </el-header>
-    <el-main>
+    <el-main class="login-main">
       <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" label-width="100px"
                class="demo-ruleForm">
         <el-form-item label="用户名" prop="username">
@@ -146,6 +146,9 @@ body > .el-container {
 .demo-ruleForm{
   max-width: 500px;
   margin: auto;
+}
+.login-main{
+  min-height:600px;
 }
 
 </style>

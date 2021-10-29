@@ -38,7 +38,9 @@ export default {
 }
 .footer{
     min-height:100px;
-    background-color:rgb(43, 42, 42);
+    margin-top:20px;
+    border-top:10px solid #04c1fa;
+    background-color:rgba(43, 42, 42,1);
 }
 .friends-link{
     width:50%;

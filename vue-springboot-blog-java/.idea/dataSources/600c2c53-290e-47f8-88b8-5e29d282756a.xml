@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="@47.93.20.204">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.23">
-    <root id="1">
-      <ServerVersion>5.7.35</ServerVersion>
-      <DefaultEngine>InnoDB</DefaultEngine>
-      <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
-      <DefaultCasing>exact</DefaultCasing>
-    </root>
+    <root id="1"/>
     <schema id="2" parent="1" name="information_schema">
       <Current>1</Current>
       <Collation>utf8_general_ci</Collation>

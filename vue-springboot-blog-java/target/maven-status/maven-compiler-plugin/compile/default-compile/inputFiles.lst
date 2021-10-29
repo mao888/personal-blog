@@ -1,5 +1,6 @@
 E:\soft\Project\Vue-SpringBoot-Blog-master\vue-springboot-blog-java\src\main\java\com\mao\common\lang\Result.java
 E:\soft\Project\Vue-SpringBoot-Blog-master\vue-springboot-blog-java\src\main\java\com\mao\controller\BlogController.java
+E:\soft\Project\Vue-SpringBoot-Blog-master\vue-springboot-blog-java\src\main\java\com\mao\service\SignUpService.java
 E:\soft\Project\Vue-SpringBoot-Blog-master\vue-springboot-blog-java\src\main\java\com\mao\VueSpringbootBlogApplication.java
 E:\soft\Project\Vue-SpringBoot-Blog-master\vue-springboot-blog-java\src\main\java\com\mao\config\MybatisPlusConfig.java
 E:\soft\Project\Vue-SpringBoot-Blog-master\vue-springboot-blog-java\src\main\java\com\mao\controller\UserController.java
@@ -10,6 +11,7 @@ E:\soft\Project\Vue-SpringBoot-Blog-master\vue-springboot-blog-java\src\main\jav
 E:\soft\Project\Vue-SpringBoot-Blog-master\vue-springboot-blog-java\src\main\java\com\mao\util\property\JWTProperty.java
 E:\soft\Project\Vue-SpringBoot-Blog-master\vue-springboot-blog-java\src\main\java\com\mao\service\impl\UserServiceImpl.java
 E:\soft\Project\Vue-SpringBoot-Blog-master\vue-springboot-blog-java\src\main\java\com\mao\shiro\JwtToken.java
+E:\soft\Project\Vue-SpringBoot-Blog-master\vue-springboot-blog-java\src\main\java\com\mao\controller\SignupController.java
 E:\soft\Project\Vue-SpringBoot-Blog-master\vue-springboot-blog-java\src\main\java\com\mao\entity\User.java
 E:\soft\Project\Vue-SpringBoot-Blog-master\vue-springboot-blog-java\src\main\java\com\mao\config\ShiroConfig.java
 E:\soft\Project\Vue-SpringBoot-Blog-master\vue-springboot-blog-java\src\main\java\com\mao\controller\AccountController.java
