@@ -1,6 +1,6 @@
 > **项目：Vue-SpringBoot-PersonalBlog**
 > 
->**个人博客网址**：http://47.93.20.204/blogs
+>**个人博客网址**：http://www.huchao.vip/blogs
 >
 > **CSDN：毛_三月**
 
